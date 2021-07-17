@@ -13,7 +13,8 @@ ln -sf ~/.dotfiles/backup-scripts/ ~/dev/tools/
 
 #Install apps via Brew
 brew update
-brew bundle --file=~/.dotfiles/Brewfile
+brew bundle --file=~/.dotfiles/software/main-brewfile
+brew bundle --file=~/.dotfiles/software/cmd-brewfile
 
 
 # Clone active repos

@@ -53,7 +53,6 @@ brew 'mpv'
 
 
 # MAS stuff
-# mas '1Password', id: 443987910
 mas '1Password 7', id: 1333542190
 mas 'Tweetbot 3 for Twitter', id: 1384080005
 mas 'Yoink', id: 457622435
