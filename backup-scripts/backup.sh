@@ -6,7 +6,10 @@ set -euo pipefail
 echo "Starting backup"
 
 # Current gen are INDIA and JULIET
-CURRENT_BACKUP="JULIET"
+# CURRENT_BACKUP="INDIA"
+# Autodetect mounted volumes
+[[ -d "/Volumes/INDIA" ]] && CURRENT_BACKUP="INDIA" || CURRENT_BACKUP="JULIET"
+
 
 
 # Verify all mount locations are present
@@ -21,6 +24,8 @@ do
     exit 1
   fi
 done
+
+echo "Selecting ${CURRENT_BACKUP} as backup location"
 
 echo "Prepping chrome bookmarks"
 rsync -arvz --delete --exclude=".DS_Store" --exclude=".TemporaryItems" --exclude=".Trashes" --exclude=".AppleDouble" ~/Library/Application\ Support/Google/Chrome/Default/Bookmarks /Volumes/flemingg/Bookmarks
