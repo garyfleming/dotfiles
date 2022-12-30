@@ -78,10 +78,11 @@ plugins=(
   brew
   bundler
   dotenv
-  osx
+  macos
   rake
   rbenv
   ruby
+  golang
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,3 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ymp3="youtube-dl --extract-audio --audio-format mp3"
+
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
