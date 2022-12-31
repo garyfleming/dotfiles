@@ -34,11 +34,20 @@ Tick: Moves files to this directory when saving
    and set to "/Volumes/media/Music"
 
 Name Files like this: 
-`$if2(%albumartist%,%artist%)/%album%$if($gte(%totaldiscs%,2), \(disc %discnumber%\),)/%artist% - %title%`
+```
+$if2(%albumartist%,%artist%)
+/%album%
+$if(%_releasecomment%, \(%_releasecomment%\))
+$if($gte(%totaldiscs%,2), \(disc %discnumber%\),)
+/%artist% - %title%
+```
 
-## Plugins ##
+Note: this currently correctly sets release disambiguation in the file path, but not in the tags.
+e.g. " (Remastered)" might appear in the file path, but will still cause weird duplication in iTunes
 
-Install into .config/Musizbrainz/Picard/plugins/:
+## Plugins
+
+Install into .config/Musicbrainz/Picard/plugins/:
 
 1. Add Cluster As Release
 2. Feat. Artists In Titles
