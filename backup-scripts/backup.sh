@@ -10,7 +10,7 @@ backup () {
   local -a additional_exclusions=${3:-}
   all_exclusions=(${exclusions[@]} ${additional_exclusions[@]})
   echo "Backing up ${1} to ${2}"
-  rsync -arvz --delete "${all_exclusions[@]/#/--exclude=}" "${1}" "${2}"
+  rsync -arvz --delete --msgs2stderr "${all_exclusions[@]/#/--exclude=}" "${1}" "${2}"
 }
 
 
