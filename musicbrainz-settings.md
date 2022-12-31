@@ -34,12 +34,7 @@ Tick: Moves files to this directory when saving
    and set to "/Volumes/media/Music"
 
 Name Files like this: 
-`$if($eq(%compilation%,1),
-$noop(Various Artist albums)
-$if2(%albumartist%,%artist%)/%album%$if($gte(%totaldiscs%,2), \(disc %discnumber%\),)/%artist% - %title%,
-$noop(Single Artist Albums)
-$if2(%albumartist%,%artist%)/%album%$if($gte(%totaldiscs%,2), \(disc %discnumber%\),)/%artist% - %title%)
-`
+`$if2(%albumartist%,%artist%)/%album%$if($gte(%totaldiscs%,2), \(disc %discnumber%\),)/%artist% - %title%`
 
 ## Plugins ##
 
