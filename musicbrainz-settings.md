@@ -37,19 +37,27 @@ Name Files like this:
 ```
 $if2(%albumartist%,%artist%)
 /%album%
-$if(%_releasecomment%, \(%_releasecomment%\))
 $if($gte(%totaldiscs%,2), \(disc %discnumber%\),)
 /%artist% - %title%
 ```
 
-Note: this currently correctly sets release disambiguation in the file path, but not in the tags.
-e.g. " (Remastered)" might appear in the file path, but will still cause weird duplication in iTunes
+Note: Disambiguation is added by scripting. Adding it here as well doubles it up!
 
 ## Plugins
 
-Install into .config/Musicbrainz/Picard/plugins/:
+These should all be available in the Plugins preferences pane, but if not install into .config/Musicbrainz/Picard/plugins/:
 
 1. Add Cluster As Release
 2. Feat. Artists In Titles
 3. Release Type
+
+## Scripting 
+
+Tick: Enable Tagger Scripts
+
+Add a new tagger script, name it "Album", and set the contents to:
+
+`$set(album,%album%$if(%_releasecomment%, \(%_releasecomment%\)))`
+
+This adds album disambiguation (e.g. "Remastered") to the album tag.
  
