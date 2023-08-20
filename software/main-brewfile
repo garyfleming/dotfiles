@@ -9,25 +9,21 @@ brew 'findutils'
 # Install Bash 4
 brew 'bash'
 
-# Install wget with IRI support
-brew 'wget', args: ['enable-iri']
-
-
-
 
 #Dev tools
 cask 'intellij-idea'
-cask 'java'
 brew 'maven'
+brew 'visual-studio-code'
 
 # Identity
 cask 'keybase'
 brew 'gpg'
 
 #Other...
-brew '1password'
+cask '1password'
 cask '1password-cli'
 cask 'anytrans'
+cask 'citrix-workspace'
 cask 'deckset'
 cask 'disk-inventory-x'
 cask 'dropbox'
