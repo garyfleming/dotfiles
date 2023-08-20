@@ -17,7 +17,6 @@ brew 'wget', args: ['enable-iri']
 
 #Dev tools
 cask 'intellij-idea'
-cask 'sublime-text'
 cask 'java'
 brew 'maven'
 
@@ -25,24 +24,24 @@ brew 'maven'
 cask 'keybase'
 brew 'gpg'
 
-#Virtualisation
-cask 'vagrant'
-cask 'virtualbox'
-
 #Other...
+brew '1password'
+cask '1password-cli'
+cask 'anytrans'
 cask 'deckset'
-cask 'xquartz'
-cask 'nordvpn'
 cask 'disk-inventory-x'
-cask 'musicbrainz-picard'
-cask 'openoffice'
+cask 'dropbox'
+cask 'elgato-stream-deck'
 cask 'google-chrome'
+cask 'itsycal'
+cask 'monitorcontrol'
+cask 'musicbrainz-picard'
+cask 'nordvpn'
+cask 'openoffice'
 cask 'the-unarchiver'
 cask 'vlc'
-cask 'dropbox'
 cask 'keepingyouawake'
-cask 'atom'
-cask 'itsycal'
+cask 'xquartz'
 
 # Video
 brew 'handbrake'
@@ -51,8 +50,3 @@ brew 'mkvtoolnix'
 brew 'mp4v2'
 brew 'mpv'
 
-
-# MAS stuff
-mas '1Password 7', id: 1333542190
-mas 'Tweetbot 3 for Twitter', id: 1384080005
-mas 'Yoink', id: 457622435
