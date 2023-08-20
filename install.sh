@@ -7,6 +7,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # SSH
 ln -f ~/.dotfiles/ssh/sshconfig ~/.ssh/config
 
+# GIT
+ln -f ~/.dotfiles/gitconfig ~/.gitconfig
+
 # Tools
 mkdir -p ~/dev/tools/
 ln -sf ~/.dotfiles/backup-scripts/ ~/dev/tools/
