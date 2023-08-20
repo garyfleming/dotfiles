@@ -26,7 +26,7 @@ brew bundle --file=~/.dotfiles/software/cmd-brewfile
 # TODO currently removed old clone script. Was way out of date.
 
 # Ruby
-# TODO ensure ruby is installed and up-to-date
+# TODO ensure ruby is installed and up-to-date: rbenv?
 sudo gem install bundler
 sudo gem install jekyll
 sudo gem install video_transcoding
