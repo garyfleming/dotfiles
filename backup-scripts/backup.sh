@@ -11,6 +11,7 @@ backup () {
   all_exclusions=(${exclusions[@]} ${additional_exclusions[@]})
   echo "Backing up ${1} to ${2}"
   rsync -arvz --delete --msgs2stderr "${all_exclusions[@]/#/--exclude=}" "${1}" "${2}"
+  # rsync -r --delete --existing --ignore-existing --ignore-errors --msgs2stderr "${1}" "${2}"
 }
 
 
