@@ -117,4 +117,5 @@ alias ymp3="youtube-dl --extract-audio --audio-format mp3"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 eval "$(zoxide init zsh)"
+eval "$(rbenv init - zsh)"
 

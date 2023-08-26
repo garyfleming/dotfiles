@@ -29,9 +29,9 @@ gh repo clone garyfleming/solitude-jekyll ~/dev/projects/solitude-jekyll
 # TODO provision ssh-key for github and vkps. 1pass?
 # TODO currently removed old clone script. Was way out of date.
 
-# Ruby
-# TODO ensure ruby is installed and up-to-date: rbenv?
-# TODO rework this entire part
-# sudo gem install bundler
-# sudo gem install jekyll
-# sudo gem install video_transcoding
+# Ruby - Keep version up to date
+rbenv install 3.2.1
+rbenv global 3.2.1
+sudo gem update --system
+sudo gem install bundler
+sudo gem install jekyll
