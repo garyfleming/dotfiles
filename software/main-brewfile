@@ -38,6 +38,7 @@ cask 'the-unarchiver'
 cask 'vlc'
 cask 'keepingyouawake'
 cask 'xquartz'
+cask 'zoom'
 
 # Video
 brew 'handbrake'
