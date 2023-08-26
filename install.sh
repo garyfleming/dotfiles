@@ -19,6 +19,10 @@ brew update
 brew bundle --file=~/.dotfiles/software/main-brewfile
 brew bundle --file=~/.dotfiles/software/cmd-brewfile
 
+# Repos (TODO)
+mkdir -p ~/dev/projects/
+gh repo clone garyfleming/solitude-jekyll ~/dev/projects/solitude-jekyll
+
 
 # Clone active repos
 # TODO use 1pass-cli to get passwords
@@ -27,6 +31,7 @@ brew bundle --file=~/.dotfiles/software/cmd-brewfile
 
 # Ruby
 # TODO ensure ruby is installed and up-to-date: rbenv?
-sudo gem install bundler
-sudo gem install jekyll
-sudo gem install video_transcoding
+# TODO rework this entire part
+# sudo gem install bundler
+# sudo gem install jekyll
+# sudo gem install video_transcoding
