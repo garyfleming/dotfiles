@@ -23,6 +23,14 @@ brew bundle --file=~/.dotfiles/software/cmd-brewfile
 mkdir -p ~/dev/projects/
 gh repo clone garyfleming/solitude-jekyll ~/dev/projects/solitude-jekyll
 
+mkdir -p ~/dev/talks/
+gh repo clone garyfleming/the-board-whisperer ~/dev/talks/the-board-whisperer
+gh repo clone garyfleming/apis-for-decades ~/dev/talks/apis-for-decades
+gh repo clone garyfleming/tdd-is-my-shame ~/dev/talks/tdd-is-my-shame
+gh repo clone garyfleming/continuous-entropy ~/dev/talks/continuous-entropy
+gh repo clone garyfleming/estimates ~/dev/talks/estimates
+gh repo clone garyfleming/lets-begin ~/dev/talks/lets-begin
+
 
 # Clone active repos
 # TODO use 1pass-cli to get passwords
