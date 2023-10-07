@@ -12,13 +12,21 @@ Password: .......
 Tick: Translate artistnames to this Locale...
 Tick Use standardized artist names
 Tick: Use Release Relationships
+
+## Metadata -> Genres
+
+Tick: Use genres from Musicbrainz
 Tick: Use folksonomy tags as genre
 
 
 ## Tags ##
 
 Tick: write tags to files
+
+## Tags -> ID3
+
 Tag version: 2.4, encoding UTF-8
+Tick: Save iTunes compatible grouping and work
 Tick: Also include ID3v1 tags in the files
 
 ## Cover Art ##
@@ -28,10 +36,12 @@ Tick: Only embed a front image
 
 ## File Naming ##
 
+Tick: Move files when saving and set to "/Volumes/media/Music"
+
 Tick: rename files when saving
-Tick: Windows compatibility
-Tick: Moves files to this directory when saving
-   and set to "/Volumes/media/Music"
+
+
+
 
 Name Files like this: 
 ```
@@ -41,7 +51,10 @@ $if($gte(%totaldiscs%,2), \(disc %discnumber%\),)
 /%artist% - %title%
 ```
 
-Note: Disambiguation is added by scripting. Adding it here as well doubles it up!
+Note: Disambiguation is added by scripting (a later section!). Adding it here as well doubles it up!
+
+
+Tick: Windows compatibility
 
 ## Plugins
 

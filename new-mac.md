@@ -24,7 +24,10 @@
 14. Filebot settings. Can grab from dotfiles repo: filebot-settings.md
 15. Restore chrome bookmarks from backup (TODO script this)
 16. Setup citrix. Don't use the workspace, just go to myworkspace.jpmchase.com in a browser
-17. 
+17. Music library
+   1. Navigate to /Applications in finder
+   2. Option+click Music to pick a library
+   3. Library is current a file called "Music Library.musiclibrary" in /Volumes/media
 
 ## Migrate iTunes Library ##
 
