@@ -1,6 +1,6 @@
 
 brew 'bat'
-brew 'exa'
+brew 'eza'
 brew 'fd'
 brew 'get_iplayer'
 brew 'httpie'
